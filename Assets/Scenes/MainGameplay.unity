@@ -957,7 +957,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5ca71f052995a5c4699202fe818f9563, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  GameManager: {fileID: 0}
+  jumpSfx: {fileID: 8300000, guid: 722ebc31169b80742980703d147c4ab1, type: 3}
+  coinSfx: {fileID: 8300000, guid: b0a5585af60336e46a148efd097e5ea8, type: 3}
+  GameManager: {fileID: 320837432}
   jumpForce: 12
 --- !u!61 &1714968076
 BoxCollider2D:

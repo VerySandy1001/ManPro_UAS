@@ -4,11 +4,15 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
 
+    public AudioClip jumpSfx;
+    public AudioClip coinSfx;
+
     public GameManager GameManager;
     public float jumpForce  = 10f;
     private Rigidbody2D rb;
     private bool isGrounded;
 
+    private AudioSource audioSource;
 
     // Start is called before the first frame update
     void Start()
@@ -25,6 +29,10 @@ public class PlayerController : MonoBehaviour
             if (isGrounded)
             {
                 Jump();
+                if (jumpSfx != null && audioSource != null)
+                {
+                    audioSource.PlayOneShot(jumpSfx);
+                }
             }
         }
     }
@@ -52,7 +60,10 @@ public class PlayerController : MonoBehaviour
             {
                 GameManager.MenambahScore();
             }
-
+            if (coinSfx != null && audioSource != null)
+            {
+                audioSource.PlayOneShot(coinSfx);
+            }
             Destroy(other.gameObject);
         }
         else if (other.CompareTag("Obstacle"))
