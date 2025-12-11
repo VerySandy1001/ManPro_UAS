@@ -1,10 +1,10 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
 public class PlayerController : MonoBehaviour
 {
 
+    public GameManager GameManager;
     public float jumpForce  = 10f;
     private Rigidbody2D rb;
     private bool isGrounded;
@@ -14,6 +14,7 @@ public class PlayerController : MonoBehaviour
     void Start()
     {
        rb = GetComponent<Rigidbody2D>();
+       GameManager = FindAnyObjectByType<GameManager>();
     }
 
     // Update is called once per frame
@@ -40,6 +41,23 @@ public class PlayerController : MonoBehaviour
         if (collision.gameObject.CompareTag("Ground"))
         {
             isGrounded = true;  
+        }
+    }
+
+    void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.CompareTag("Coin"))
+        {
+            if (GameManager != null)
+            {
+                GameManager.MenambahScore();
+            }
+
+            Destroy(other.gameObject);
+        }
+        else if (other.CompareTag("Obstacle"))
+        {
+            UnityEngine.SceneManagement.SceneManager.LoadScene(2);   
         }
     }
 }
