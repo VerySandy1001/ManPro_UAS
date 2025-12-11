@@ -262,6 +262,7 @@ GameObject:
   m_Component:
   - component: {fileID: 320837433}
   - component: {fileID: 320837432}
+  - component: {fileID: 320837434}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -298,6 +299,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &320837434
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 320837431}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7c959ff934dd05b458c0e0f965976a58, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &327927908
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -310,6 +323,10 @@ PrefabInstance:
       propertyPath: Obstacle.Array.size
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 2130165868710131869, guid: 6ff99bad0d07d5c46beb528054aa4e4d, type: 3}
+      propertyPath: Obstacle.Array.data[0]
+      value: 
+      objectReference: {fileID: 6522150623701628960, guid: 3a165684b57194b44b6fa18e94afe16e, type: 3}
     - target: {fileID: 2130165868710131869, guid: 6ff99bad0d07d5c46beb528054aa4e4d, type: 3}
       propertyPath: Obstacle.Array.data[1]
       value: 
@@ -1400,6 +1417,63 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 013cb68ad81934b4083476ddb06f0c2b, type: 3}
+--- !u!1001 &7449574301281546097
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 5721194121704576327, guid: 3a165684b57194b44b6fa18e94afe16e, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1.7005
+      objectReference: {fileID: 0}
+    - target: {fileID: 5721194121704576327, guid: 3a165684b57194b44b6fa18e94afe16e, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 7.3811
+      objectReference: {fileID: 0}
+    - target: {fileID: 5721194121704576327, guid: 3a165684b57194b44b6fa18e94afe16e, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5721194121704576327, guid: 3a165684b57194b44b6fa18e94afe16e, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5721194121704576327, guid: 3a165684b57194b44b6fa18e94afe16e, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5721194121704576327, guid: 3a165684b57194b44b6fa18e94afe16e, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5721194121704576327, guid: 3a165684b57194b44b6fa18e94afe16e, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5721194121704576327, guid: 3a165684b57194b44b6fa18e94afe16e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5721194121704576327, guid: 3a165684b57194b44b6fa18e94afe16e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5721194121704576327, guid: 3a165684b57194b44b6fa18e94afe16e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6522150623701628960, guid: 3a165684b57194b44b6fa18e94afe16e, type: 3}
+      propertyPath: m_Name
+      value: 174-1746846_java-logo-hd-png-download
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 3a165684b57194b44b6fa18e94afe16e, type: 3}
 --- !u!1001 &8134989606484347908
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1528,11 +1602,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9084366882433287710, guid: 14af8b1b359cb4b469a9d7ac6721f486, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 5.87
+      value: 7.67
       objectReference: {fileID: 0}
     - target: {fileID: 9084366882433287710, guid: 14af8b1b359cb4b469a9d7ac6721f486, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.59
+      value: 7.38
       objectReference: {fileID: 0}
     - target: {fileID: 9084366882433287710, guid: 14af8b1b359cb4b469a9d7ac6721f486, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1592,3 +1666,4 @@ SceneRoots:
   - {fileID: 4136222618151702626}
   - {fileID: 7101258996892111104}
   - {fileID: 2254236893020318097}
+  - {fileID: 7449574301281546097}

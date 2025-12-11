@@ -8,12 +8,12 @@ public class SceneManager : MonoBehaviour
 
     public void PindahKeGameplay()
     {
-        UnityEngine.SceneManagement.SceneManager.LoadScene(0);
+        UnityEngine.SceneManagement.SceneManager.LoadScene(1);
     }
 
     public void PindahKeMainMenu()
     {
-        UnityEngine.SceneManagement.SceneManager.LoadScene(1);
+        UnityEngine.SceneManagement.SceneManager.LoadScene(0);
     }
     // Update is called once per frame
     void Update()
